@@ -1,13 +1,33 @@
+import { list } from 'postcss';
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import SingleQuiz from '../SingleQuiz/SingleQuiz';
 
 
 const QuizPage = () => {
     const quizs = useLoaderData()
-    console.log(quizs);
+    const { logo, name, question } = quizs.data
+    console.log(quizs.data);
+
     return (
         <div>
-            <h1>This is the  quiz page {quizs.data.name}</h1>
+            <div>         
+                <h2 className='text-6xl py-10 justify-items-center font-bold text-red-600'>{name}</h2>
+            </div>
+
+            {
+                quizs.data.questions.map(quiz => quiz.question.replace(/(<([^>]+)>)/ig, ''))
+
+            }
+            {
+                quizs.data.questions.map(options =>
+                    options.options.map(option => option))
+            }
+
+
+
+
+
         </div>
     );
 };

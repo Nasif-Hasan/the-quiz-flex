@@ -5,12 +5,9 @@ const QuizCart = ({ topics }) => {
     
     const { id, name, logo, total } = topics
 
-
-
-
     return (
         <div>
-            <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-red-100">
+            <div className="max-w-xs lg:ml-10 md:ml-8 ml-3 rounded-md shadow-md dark:bg-gray-900 dark:text-red-100">
                 <img src={logo} alt="" className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500" />
                 <div className="flex flex-col justify-between p-6 space-y-8">
                     <div className="space-y-2">

@@ -22,19 +22,22 @@ function App() {
         },
         {
           path: '/quizcart',
-          loader: () => fetch('https://openapi.programming-hero.com/api/quiz/${id}'),
+          // loader: () => fetch(`https://openapi.programming-hero.com/api/quiz/${id}`),
           element: <QuizCart></QuizCart>
         },
         {
           path: '/quiz/:quizId',
-          loader: async ({params}) => {
-            // console.log(params.quizId);
+          loader: async ({ params }) => {
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
           },
           element: <QuizPage></QuizPage>
         },
 
-        { path: '/statics', element: <Statics></Statics> },
+        {
+          path: '/statics',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
+          element: <Statics></Statics>
+        },
         { path: '/blog', element: <Blog></Blog> },
       ]
     },
