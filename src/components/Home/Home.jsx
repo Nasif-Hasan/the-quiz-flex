@@ -22,7 +22,7 @@ const Home = () => {
             </div>
 
 
-            <div className='grid grid-cols-4 mx-auto my-10'>
+            <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-5 my-10'>
                 {
                     topics.data.map(topic => <QuizCart
                         key={topic.id}

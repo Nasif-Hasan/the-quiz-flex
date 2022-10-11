@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const QuizCart = ({ topics }) => {
+    
     const { id, name, logo, total } = topics
+
 
 
 
@@ -14,7 +17,7 @@ const QuizCart = ({ topics }) => {
                         <h2 className="text-3xl font-semibold tracking-wide">{name}</h2>
                         <p className="dark:text-red-100">Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p>
                     </div>
-                    <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-red-500 dark:text-gray-900">Read more</button>
+                    <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-red-100 dark:text-gray-900"><Link to={`/quiz/${id}`}>Let's Quiz</Link></button>
                 </div>
             </div>
 
