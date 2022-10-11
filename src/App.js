@@ -13,8 +13,12 @@ function App() {
       element: <Root></Root>,
       errorElement: <Error></Error>,
       children: [
-        { path: '/', element: <Home></Home> },
-        { path: '/home', element: <Home></Home> },
+        {
+          path: '/',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
+          element: <Home></Home>
+        },
+        
         { path: '/statics', element: <Statics></Statics> },
         { path: '/blog', element: <Blog></Blog> },
       ]

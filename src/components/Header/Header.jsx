@@ -11,7 +11,7 @@ const Header = () => {
                     </a>
                     <ul className="items-stretch hidden space-x-3 md:flex">
                         <li className="flex">
-                            <Link className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent" to='/home'>Home</Link>
+                            <Link className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent" to='/'>Home</Link>
 
                         </li>
                         <li className="flex">

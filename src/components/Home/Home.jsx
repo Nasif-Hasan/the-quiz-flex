@@ -1,6 +1,10 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import QuizCart from '../QuizCart/QuizCart';
 
 const Home = () => {
+    const topics = useLoaderData()
+
     return (
         <div>
 
@@ -15,6 +19,16 @@ const Home = () => {
                         <a href="/statics" rel="noreferrer noopener" className="px-5 mt-4 lg:mt-0 py-3 rounded-md border block font-bold dark:bg-red-50 hover:bg-red-700 hover:text-white dark:text-gray-900 dark:border-none">Show Statics</a>
                     </div>
                 </div>
+            </div>
+
+
+            <div className='grid grid-cols-4 mx-auto my-10'>
+                {
+                    topics.data.map(topic => <QuizCart
+                        key={topic.id}
+                        topics={topic}
+                    ></QuizCart>)    
+                }
             </div>
         </div>
     );
