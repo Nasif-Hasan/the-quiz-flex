@@ -22,14 +22,6 @@ const QuizPage = () => {
                 ></SingleQuiz>)
 
             }
-            {/* {
-                quizs.data.questions.map(options =>
-                    options.options.map(option => option))
-            } */}
-
-            {/* quiz.question.replace(/(<([^>]+)>)/ig, '') */}
-
-
 
         </div>
     );
