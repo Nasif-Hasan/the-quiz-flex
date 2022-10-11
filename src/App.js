@@ -22,7 +22,6 @@ function App() {
         },
         {
           path: '/quizcart',
-          // loader: () => fetch(`https://openapi.programming-hero.com/api/quiz/${id}`),
           element: <QuizCart></QuizCart>
         },
         {

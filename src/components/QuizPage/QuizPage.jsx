@@ -6,25 +6,28 @@ import SingleQuiz from '../SingleQuiz/SingleQuiz';
 
 const QuizPage = () => {
     const quizs = useLoaderData()
-    const { logo, name, question } = quizs.data
+    const { id, logo, name, questions } = quizs.data
     console.log(quizs.data);
 
     return (
         <div>
-            <div>         
+            <div>
                 <h2 className='text-6xl py-10 justify-items-center font-bold text-red-600'>{name}</h2>
             </div>
 
             {
-                quizs.data.questions.map(quiz => quiz.question.replace(/(<([^>]+)>)/ig, ''))
+                questions.map(quizQuestion => <SingleQuiz
+                    key={quizQuestion.id}
+                    quizQuestion={quizQuestion}
+                ></SingleQuiz>)
 
             }
-            {
+            {/* {
                 quizs.data.questions.map(options =>
                     options.options.map(option => option))
-            }
+            } */}
 
-
+            {/* quiz.question.replace(/(<([^>]+)>)/ig, '') */}
 
 
 

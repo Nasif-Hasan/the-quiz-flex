@@ -12,7 +12,7 @@ const QuizCart = ({ topics }) => {
                 <div className="flex flex-col justify-between p-6 space-y-8">
                     <div className="space-y-2">
                         <h2 className="text-3xl font-semibold tracking-wide">{name}</h2>
-                        <p className="dark:text-red-100">Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p>
+                        <p className="dark:text-red-100">This will be so much exciting. Let's go for Quiz with QuizyFlex.</p>
                     </div>
                     <Link to={`/quiz/${id}`}><button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-red-100 dark:text-gray-900">Let's Quiz</button></Link>
                 </div>

@@ -1,10 +1,26 @@
 import React from 'react';
+import Options from '../Options/Options';
 
-const SingleQuiz = ({quiz}) => {
-    console.log(quiz);
+const SingleQuiz = ({ quizQuestion }) => {
+    const { options, id, question, correctAnswer } = quizQuestion
+
+    console.log(quizQuestion);
     return (
         <div>
-            <h2>This is question {quiz.name}</h2>
+            <div>
+                <h2>Quiz: {question.replace(/(<([^>]+)>)/ig, '')} </h2>
+
+            </div>
+            {
+                options.map(option => <Options
+                    key={id}
+                    option={option}
+                    correctAnswer={correctAnswer}
+                ></Options>)
+            }
+            <div>
+
+            </div>
         </div>
     );
 };
