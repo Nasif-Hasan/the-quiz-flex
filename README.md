@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### My Project Description
+        1. Home page show some cards which will carry you a new Quiz page.
+        2. All quiz are well organized. Every wrong and right answer will show a pop up alert. And a view icon for only right answer.
+        3. On navbar have a Statistics section which show you a graph of Line chart. This Line chart will also show on clicking the top banner button of Home page.
+        4. And have a Blog section, this section will show the answer of three important questions.

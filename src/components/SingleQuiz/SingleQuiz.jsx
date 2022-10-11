@@ -5,13 +5,13 @@ import Swal from 'sweetalert2';
 
 const SingleQuiz = ({ quizQuestion }) => {
     const { options, id, question, correctAnswer } = quizQuestion
-function showOnEyeClick() {
-    Swal.fire({
-        icon: 'info',
-        title: 'Right Answer',
-        text: `${correctAnswer}`
-      })
-}
+    function showOnEyeClick() {
+        Swal.fire({
+            icon: 'info',
+            title: 'Right Answer',
+            text: `${correctAnswer}`
+        })
+    }
 
     return (
         <div className='mx-auto'>
@@ -20,8 +20,7 @@ function showOnEyeClick() {
                     <div className=' justify-item-center mx-8 my-2'>
                         <h2 className='mx-12 mt-6 font-semibold text-2xl'>Quiz: {question.replace(/(<([^>]+)>)/ig, '')} </h2>
                     </div>
-                    <EyeIcon onClick={() => showOnEyeClick()} className="absolute top-0 right-10 h-6 w-6 text-red-700"/>
-                    
+                    <EyeIcon onClick={() => showOnEyeClick()} className="absolute top-0 right-10 h-6 w-6 text-red-700" />
                 </div>
 
                 <div className='grid lg:grid-cols-2 md:grid-cols-2 m-4 p-6'>

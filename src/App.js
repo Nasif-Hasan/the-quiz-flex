@@ -10,6 +10,7 @@ import Statics from './components/Statics/Statics';
 
 function App() {
   const router = createBrowserRouter([
+
     {
       path: '/',
       element: <Root></Root>,
@@ -21,7 +22,7 @@ function App() {
           element: <Home></Home>
         },
         {
-          path: '/quizcart',
+          path: '/quiz',
           element: <QuizCart></QuizCart>
         },
         {
@@ -31,17 +32,16 @@ function App() {
           },
           element: <QuizPage></QuizPage>
         },
-
         {
-          path: '/statics',
+          path: '/statistics',
           loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Statics></Statics>
         },
-        { path: '/blog', element: <Blog></Blog> },
+        { path: '/blog', element: <Blog></Blog> }
       ]
     },
-  ])
 
+  ])
 
   return (
     <div className="App">

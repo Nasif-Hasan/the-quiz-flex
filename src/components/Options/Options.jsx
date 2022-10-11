@@ -1,7 +1,7 @@
 import React from 'react';
 import Swal from 'sweetalert2';
 
-const Options = ({option, correctAnswer}) => {
+const Options = ({ option, correctAnswer }) => {
     console.log(correctAnswer);
     const correctOption = event => {
         const value = event.target.innerText;
@@ -10,15 +10,14 @@ const Options = ({option, correctAnswer}) => {
                 icon: 'success',
                 title: 'Right Answer',
                 text: `${correctAnswer}`
-              })
+            })
         }
-        else{
+        else {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
                 text: 'This is not the right answer. Try again.'
-                
-              })
+            })
         }
     }
 
