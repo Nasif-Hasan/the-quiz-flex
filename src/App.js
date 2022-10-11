@@ -21,9 +21,17 @@ function App() {
           element: <Home></Home>
         },
         {
-          path: '/quizPage',
-          loader: ({ params }) => fetch('https://openapi.programming-hero.com/api/quiz/${id}'),
+          path: '/quizcart',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz/${id}'),
           element: <QuizCart></QuizCart>
+        },
+        {
+          path: '/quiz/:quizId',
+          loader: async ({params}) => {
+            // console.log(params.quizId);
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
+          },
+          element: <QuizPage></QuizPage>
         },
 
         { path: '/statics', element: <Statics></Statics> },
