@@ -17,8 +17,8 @@ const QuizCart = ({ topics }) => {
                         <p className="dark:text-gray-100">This will be so much exciting. Let's go for Quiz with QuizyFlex.</p>
                     </div>
 
-                    <Link to={`/quiz/${id}`}><button type="button" className="flex items-center justify-center w-full p-3 font-bold tracking-wide rounded-md dark:bg-red-100
-                    hover:bg-red-500 dark:text-gray-900 hover:text-gray-50">Let's Quiz</button></Link>
+                    <Link to={`/quiz/${id}`}><button type="button" className="flex items-center justify-center w-full p-3 font-bold tracking-wide rounded-md dark:bg-blue-200
+                    hover:bg-blue-500 dark:text-gray-900 hover:text-gray-50">Let's Quiz</button></Link>
                 
                 </div>
             </div>

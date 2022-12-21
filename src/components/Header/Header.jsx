@@ -7,7 +7,7 @@ const Header = () => {
             <header className="p-4 dark:bg-gray-800 dark:text-gray-100">
 
                 <div className="container flex justify-between h-16 mx-auto">
-                    <a rel="noopener noreferrer" href="/" aria-label="Back to homepage" className="flex items-center p-2 text-3xl font-bold text-red-100">
+                    <a rel="noopener noreferrer" href="/" aria-label="Back to homepage" className="flex items-center p-2 text-3xl font-bold text-blue-100">
                         QuizyFlex
                     </a>
 

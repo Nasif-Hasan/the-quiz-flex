@@ -11,7 +11,7 @@ const QuizPage = () => {
         <div>
 
             <div>
-                <h2 className='text-6xl py-10 justify-items-center font-bold text-red-600'>{name}</h2>
+                <h2 className='text-6xl py-10 justify-items-center font-bold text-blue-500'>{name}</h2>
             </div>
             {
                 questions.map(quizQuestion => <SingleQuiz
